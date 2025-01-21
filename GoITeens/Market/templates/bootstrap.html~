@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6"><img src="{% static 'yabluko-dzhonagold.jpeg' %}" alt="Product 6"></div>
+        <div class="col-md-6"><img src="{% static 'bb13e46aae61da4ace78733bbbbfb31e.jpg' %}" alt="Product 3"></div>
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
