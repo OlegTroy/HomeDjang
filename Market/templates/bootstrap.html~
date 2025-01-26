@@ -1,0 +1,93 @@
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Відкрити модальне вікно
+</button>
+
+<!-- Модальне вікно -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Заголовок</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрити"></button>
+      </div>
+      <div class="modal-body">
+        Це модальне вікно!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрити</button>
+        <button type="button" class="btn btn-primary">Зберегти</button>
+      </div>
+    </div>
+  </div>
+</div>
+5. Форма:
+html
+Копіювати
+Редагувати
+<form>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email адреса</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">Ми не передаємо вашу email адресу стороннім.</div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Пароль</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <button type="submit" class="btn btn-primary">Надіслати</button>
+</form>
+
+
+<!--{% load static %}-->
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">-->
+<!--    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<style>-->
+<!--        p{color:red}-->
+<!--    </style>-->
+
+<!--<div class="container">-->
+<!--    <div class="row">-->
+<!--        <div class="col-md-6"><p>Column1</p></div>-->
+<!--        <div class="col-md-6"><p>Column1</p></div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--<br>-->
+<!--<hr>-->
+
+<!--    {%for musicians in musicians%}-->
+<!--<p>{{ musicians.name }} {{ musicians.last_name }} грає на {{ musicians.instrument }} </p>-->
+<!--    {% endfor %}-->
+<!--<br>-->
+<!--<hr>-->
+
+<!--    {%for album in albums%}-->
+<!--<p>{{ album.artist }} музичний альбом {{ album.name }} вийшов {{album.release_data }} і має {{ album.num_stars }} </p>-->
+<!--    {% endfor %}-->
+<!--<br>-->
+<!--<hr>-->
+<!--    {%for person in persons%}-->
+<!--<p>{{ person.first_name }} {{ person.last_name }} </p>-->
+<!--    {% endfor %}-->
+
+<!--    {%for person in persons%}-->
+<!--<p>{{ person.first_name }} {{ person.last_name }} </p>-->
+<!--    {% endfor %}-->
+
+<!--    {%for person in persons%}-->
+<!--<p>{{ person.first_name }} {{ person.last_name }} </p>-->
+<!--    {% endfor %}-->
+
+
+
+
+
+<!--</body>-->
+<!--</html>-->
