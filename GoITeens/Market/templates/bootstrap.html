@@ -6,24 +6,47 @@
     <title>Title</title>
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
     <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <style>
+
+    </style>
 </head>
 <body>
+    <h1>Musicians</h1>
+    <table border="3">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for musician in musicians %}
+            <tr>
+                <td>{{ musician.id }}</td>
+                <td>{{ musician.name }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 
-<style>
-        p{color:red}
-    </style>
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-6"><img src="{% static 'yabluko-dzhonagold.jpeg' %}" alt="Product 6"></div>
-        <div class="col-md-6"><p>Column1</p></div>
-    </div>
-</div>
-
-
-
-
-
-
+    <h1>Albums</h1>
+    <table border="3">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Musician</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for album in albums %}
+            <tr>
+                <td>{{ album.id }}</td>
+                <td>{{ album.name }}</td>
+                <td>{{ album.musician.name }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 </body>
 </html>
